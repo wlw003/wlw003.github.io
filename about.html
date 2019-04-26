@@ -1,0 +1,109 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Wing Lam Wong - About Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    </head>
+    <body>
+        <nav id="topBar" class="menuBar">
+            <a href="http://127.0.0.1:80/home">Home</a>
+            <a href="http://127.0.0.1:80/about">About Me</a>
+            <a href="http://127.0.0.1:80/projects">Projects</a>
+            <a href="http://127.0.0.1:80/classes">Classes</a>
+            <a href="javascript:void(0)" class="icon" onclick="dropDownMenu()">&#9776;</a>
+        
+            <script>
+                function dropDownMenu() {
+                    var x = document.getElementById("topBar");
+                    if (x.className === "menuBar") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "menuBar";
+                    }
+                }
+            </script>
+        </nav>
+        <div class="main-container">
+            <header>
+                <h1>About Me</h1>
+            </header>
+            <section id="blur">
+                <p>Hi, my name is Wing Wong. Currently, I am studying computer
+                engineering at University of California San Diego. I will be graduting
+                in June 2019. I am looking for a job or internship.</p>
+            </section>
+            <button class="collapsible">Program Languages:</button>
+            <div class="content">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>javascript</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>JSON</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <button class="collapsible">Technical Skills:</button>
+            <div class="content">
+                <ul>
+                    <li>Unix/Linux environments</li>
+                    <li>GitHub</li>
+                    <li>LabView</li>
+                    <li>Arduino</li>
+                    <li>SolidWorks</li>
+                    <li>Soldering</li>
+                </ul>
+            </div>
+            <button class="collapsible">Organizations:</button>
+            <div class="content">
+                <ul>
+                    <li>Society of Women Engineers</li>
+                    <li>Alpha Phi Omega</li>
+                </ul>
+            </div>
+
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                        content.style.display = "none";
+                        } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+            </script>
+
+            <footer>
+                <h4 id="siteMapTitle">Site Map</h4>
+                <ul id="siteMap">
+                    <li><a href="http://127.0.0.1:80/home">Home</a></li>
+                    <li><a href="http://127.0.0.1:80/about">About Me</a></li>
+                    <li><a href="http://127.0.0.1:80/projects">Projects</a></li>
+                    <li><a href="http://127.0.0.1:80/classes">Classes</a></li>
+                </ul>
+                <h4 id="contactTitle">Contact Infomation</h4>
+                <ul id="contact">
+                    <li>Email: winglamwong316@gmail.com</li>
+                </ul>
+                <h4 id="snnTitle">Social Media</h4>
+                <ul id="snn">
+                    <li><a href="https://www.linkedin.com/in/wing-wong-6b8360177/" class="fa fa-linkedin"></a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

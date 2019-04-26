@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Wing Lam Wong - Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    </head>
+    <body>
+        <nav id="topBar" class="menuBar">
+            <a href="http://127.0.0.1:80/home">Home</a>
+            <a href="http://127.0.0.1:80/about">About Me</a>
+            <a href="http://127.0.0.1:80/projects">Projects</a>
+            <a href="http://127.0.0.1:80/classes">Classes</a>
+            <a href="javascript:void(0)" class="icon" onclick="dropDownMenu()">&#9776;</a>
+        
+            <script>
+                function dropDownMenu() {
+                    var x = document.getElementById("topBar");
+                    if (x.className === "menuBar") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "menuBar";
+                    }
+                }
+            </script>
+        </nav>
+        <div class="main-container">
+            <header>
+                <h1>Projects</h1>
+            </header>
+            <div class="project">
+                <h2>Fitness Wearable: The Baking Game</h2>
+                <img scr="images/ECE16.jpg" alt="Fitness Wearable Prototype">
+                <p>Our text-based fitness game wearable is intended to make exercise 
+                more enjoyable and give motivation to adopt a fitness routine. It is 
+                especially important to keep our bodies moving as we age.</p>
+                <a href="https://sites.google.com/ucsd.edu/ece-16-team-soba/home">Click here for more infomation about this project.</a>
+            </div>
+            <div class="project">
+                <h2>Music Juke Box</h2>
+                <img scr="images/ECE144.jpg" alt="Music Juke Box">
+                <p>Using 3D printing, laser cutting, basic circuits, and LabVIEW, we
+                created a music juke box that plays three songs.</p>
+                <a href="files/ECE144.pdf" target="_blank">Click here for more infomation about this project.</a>
+            </div>
+            <footer>
+                <h4 id="siteMapTitle">Site Map</h4>
+                <ul id="siteMap">
+                    <li><a href="http://127.0.0.1:80/home">Home</a></li>
+                    <li><a href="http://127.0.0.1:80/about">About Me</a></li>
+                    <li><a href="http://127.0.0.1:80/projects">Projects</a></li>
+                    <li><a href="http://127.0.0.1:80/classes">Classes</a></li>
+                </ul>
+                <h4 id="contactTitle">Contact Infomation</h4>
+                <ul id="contact">
+                    <li>Email: winglamwong316@gmail.com</li>
+                </ul>
+                <h4 id="snnTitle">Social Media</h4>
+                <ul id="snn">
+                    <li><a href="https://www.linkedin.com/in/wing-wong-6b8360177/" class="fa fa-linkedin"></a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

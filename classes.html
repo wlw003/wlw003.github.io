@@ -1,0 +1,126 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Wing Lam Wong - Classes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <nav id="topBar" class="menuBar">
+            <a href="http://127.0.0.1:80/home">Home</a>
+            <a href="http://127.0.0.1:80/about">About Me</a>
+            <a href="http://127.0.0.1:80/projects">Projects</a>
+            <a href="http://127.0.0.1:80/classes">Classes</a>
+            <a href="javascript:void(0)" class="icon" onclick="dropDownMenu()">&#9776;</a>
+        
+            <script>
+                function dropDownMenu() {
+                    var x = document.getElementById("topBar");
+                    if (x.className === "menuBar") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "menuBar";
+                    }
+                }
+            </script>
+        </nav>
+        <div class="main-container">
+            <header><h1>Classes</h1></header>
+            <h2>Electrical Engineering Classes</h2>
+            <button class="collapsible">ECE 5: Introduction to Electrical and Computer Engineering</button>
+            <div class="content">
+                <p>An introduction to electrical and computer engineering. Topics include 
+                circuit theory, assembly, and testing, embedded systems programming and 
+                debugging, transducer mechanisms and interfacing transducers, signals and 
+                systems theory, digital signal processing, and modular design techniques. </p>
+            </div>        
+            <button class="collapsible">ECE 16: Rapid Hardware and Software Design for Interfacing with the World</button>
+            <div class="content">
+                <p>Students are introduced to embedded systems concepts with structured 
+                development of a computer controller based on electromyogram (EMG) signals 
+                through four lab assignments through the quarter. Key concepts include: 
+                sampling, signal processing, communication, and real-time control. Students 
+                will apply their prior knowledge in C to program microcontrollers and will 
+                engage in data analysis using the Python programming language.</p>
+            </div>        
+            <button class="collapsible">ECE 111: Advanced Digital Design Project</button>
+            <div class="content">
+                <p>Advanced topics in digital circuits and systems. Use of computers and 
+                design automation tools. Hazard elimination, synchronous/asynchronous 
+                FSM synthesis, synchronization and arbitration, pipelining and timing 
+                issues. Problem sets and design exercises. A large-scale design project. 
+                Simulation and/or rapid prototyping.</p>
+            </div>        
+            <button class="collapsible">ECE 140A/B: The Art of Product Engineering</button>
+            <div class="content">
+                <p>Building on a solid foundation of electrical and computer engineer skills, 
+                this course strives to broaden student skills in software, full-stack engineering, 
+                and concrete understanding of methods related to the realistic development of 
+                a commercial product. Students will research, design, and develop an IOT 
+                device to serve an emerging market. </p>
+            </div>
+            <button class="collapsible">ECE 144: LabVIEW Programming: Design and Applications</button>
+            <div class="content">
+                <p>Develop, debug, and test LabVIEW VIs, solve problems using LabVIEW, use 
+                data acquisition, and perform signal processing and instrument control in 
+                LabVIEW applications. Groups of students will build an elevator system 
+                from laser-cut and 3-D printed parts; integrate sensors, motors, and 
+                servos; and program using state-machine architecture in LabVIEW. Students 
+                will have the opportunity to take the National Instruments Certified LabVIEW 
+                Associate Developer (CLAD) exam at the end of the quarter.</p>
+            </div>
+            <h2>Computer Science</h2>
+            <button class="collapsible">CSE 110: Software Engineering</button>
+            <div class="content">
+                <p>Introduction to software development and engineering methods, including 
+                specification, design, implementation, testing, and process. an emphasis on 
+                team development, agile methods, and use of tools as IDE's, version control, 
+                and test harnesses.</p>
+            </div>
+            <button class="collapsible">CSE 112: Advanced Software Engineering</button>
+            <div class="content">
+                <p>This course will cover software engineering topics associated with 
+                large systems developments such as requirement and specifications, 
+                testing and maintenance, and design. Specific attention will be 
+                given to development tolls and automated support environments.</p>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.display === "block") {
+                            content.style.display = "none";
+                            } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+            <footer>
+                <h4 id="siteMapTitle">Site Map</h4>
+                <ul id="siteMap">
+                    <li><a href="http://127.0.0.1:80/home">Home</a></li>
+                    <li><a href="http://127.0.0.1:80/about">About Me</a></li>
+                    <li><a href="http://127.0.0.1:80/projects">Projects</a></li>
+                    <li><a href="http://127.0.0.1:80/classes">Classes</a></li>
+                </ul>
+                <h4 id="contactTitle">Contact Infomation</h4>
+                <ul id="contact">
+                    <li>Email: winglamwong316@gmail.com</li>
+                </ul>
+                <h4 id="snnTitle">Social Media</h4>
+                <ul id="snn">
+                    <li><a href="https://www.linkedin.com/in/wing-wong-6b8360177/" class="fa fa-linkedin"></a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
